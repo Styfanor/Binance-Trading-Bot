@@ -41,7 +41,7 @@ def on_close(ws):
     print('close connection')
 
 def on_message(ws, message):
-    global closes
+    global closes, in_position
 
     print('received message')
     json_message = json.loads(message)
@@ -80,7 +80,7 @@ def on_message(ws, message):
                     print("It is oversold, but you already own it, nothing  to do.")
                 else:
                     print("Oversold! BUY! BUY! BUY")
-                    # out binance buy logic here
+                    # put binance buy logic here
                     order_succeeded = order(SIDE_BUY, TRADE_QUANTITY, TRADE_SYMBOL)
                     if order_succeeded:
                         in_position = True
