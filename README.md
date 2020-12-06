@@ -19,7 +19,7 @@ I always wanted to code my own Trading Bot. I found a lot of information for the
 I would give it a shot. Also, I wanted to learn to use websockets with Phython.
 
 The trading strategy I used for this project is based on the RSI (Relative Strength Index). Basically, we will calculate 
-the RSI with the 14 recent close values. If the RSI is over 70 we will sell or Assets, because the market is overbought.
+the RSI with the 14 recent close values. If the RSI is over 70 we will sell our Assets, because the market is overbought.
 And when the RSI is lower than 30 we will buy ETH, because the market is oversold. For more information visit: [Wikipedia-RSI](https://en.wikipedia.org/wiki/Relative_strength_index)
 
 ## Technologies
