@@ -10,6 +10,7 @@ import config
 
 SOCKET = "wss://stream.binance.com:9443/ws/ethusdt@kline_1m"
 
+#RSI Setup
 RSI_PERIOD = 14
 RSI_OVERBOUGHT = 70
 RSI_OVERSOLD = 30
