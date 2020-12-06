@@ -54,6 +54,6 @@ pip install requirements
 * [Websocket-Stream](https://github.com/binance-exchange/binance-official-api-docs/blob/master/web-socket-streams.md)
 
 
-##Author
+## Author
 Stefan Helm
 
