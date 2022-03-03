@@ -85,6 +85,7 @@ def on_message(ws, message):
                     if order_succeeded:
                         in_position = True
 
+        closes.pop()
 
 ws = websocket.WebSocketApp(SOCKET, on_open=on_open, on_close=on_close, on_message=on_message)
 ws.run_forever()
