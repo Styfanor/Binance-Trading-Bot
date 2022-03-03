@@ -84,6 +84,7 @@ def on_message(ws, message):
                     order_succeeded = order(SIDE_BUY, TRADE_QUANTITY, TRADE_SYMBOL)
                     if order_succeeded:
                         in_position = True
+            closes = numpy.delete(closes, [0])
 
 
 ws = websocket.WebSocketApp(SOCKET, on_open=on_open, on_close=on_close, on_message=on_message)
